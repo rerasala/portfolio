@@ -64,9 +64,9 @@ nav a.icon {
 
 h1{
   padding: 20px;
-  color: #9ed0ff;
+  color: #3ea2ff;
   font-weight: bolder;
-  font-size: 84px;
+  font-size: 72px;
 }
 
 h2 {
@@ -74,6 +74,7 @@ h2 {
   color: white;
   font-size: 32px;
   font-weight: normal;
+  text-align: center;
 }
 
 h3{
@@ -229,6 +230,7 @@ footer {
 .subhead-italics {
   font-style: italic;
   font-size: 18px;
+  color: black;
 }
 
 .project-content h3 {
@@ -239,6 +241,7 @@ footer {
 
 .normaltext {
   text-align: center;
+  color: black;
 }
 
 .card-text{
@@ -255,6 +258,23 @@ footer {
   color: white;
 }
 
+.project-card-blue h3 {
+  font-weight: bolder;
+  color: white;
+  font-size: 28px;
+}
+
+.project-card-blue .subhead-italics {
+  font-style: italic;
+  font-size: 18px;
+  color: white;
+}
+
+.project-card-blue .normaltext {
+  text-align: center;
+  color: white;
+}
+
 .project-card-blue .project-content h3 {
   color: white;
 }
@@ -262,10 +282,6 @@ footer {
 .gallery-content h2, h3 {
   text-align: center;
   padding: 20px;
-}
-
-.gallery-content h2{
-  margin-top: 30px;
 }
 
 .gallery-grid {
@@ -349,4 +365,11 @@ footer {
   font-size: 14px;
 }
 
+p {
+  color: white;
+  font-size: 18px;
+}
 
+h1 {
+  text-align: center;
+}
