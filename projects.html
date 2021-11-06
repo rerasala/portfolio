@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="images/logo_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Rohan Erasala's Website</title>
+  </head>
+
+
+<header>
+
+  <script>
+    function displayMenu() {
+      if (document.getElementById("navElements").style.display === "block") {
+        document.getElementById("navElements").style.display = "none";
+      } else {
+        document.getElementById("navElements").style.display = "block";
+      }
+
+      if(document.getElementById("button-icon").src === "../images/ci_hambuger.png") {
+        document.getElementById("button-icon").src = "../images/x_icon.png";
+      }
+      
+    }
+  </script>
+
+  <nav>
+    <a id = "logo" href="#home" onclick="displayMenu()">RE</a>
+    <div id="navElements">
+      <a class = "navLink" href="index.html">Home</a>
+      <a class = "navLink" href="about.html">About</a>
+      <a class = "navLink current" href="projects.html">Projects</a>
+      <a class = "navLink" href="Gallery.html">Gallery</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+      <img id = "button-icon" src="../images/ci_hamburger.png"></i>
+    </a>
+  </nav>
+
+</header>
+
+<body>
+
+  <div class = "projects-container">
+
+    <div class = "header">
+      <h2>My Projects</h2>
+      <h3>Click any picture to view the documentation/prototype!</h3>
+    </div>
+
+    <div class = "card-container">
+
+      <div class = "project-card-gray">
+        <div class = "project-content">
+
+        <a href="https://docs.google.com/document/d/1swsUomdWmUrA-e1Nrz6lSLgfb-9GCOTS8vwrQegIT2E/edit" target="_blank">
+          <img class = project-logo src="../images/RC_preview.png" alt="Recruiting Corner Preview">
+        </a>
+        
+        <div class="card-text">
+
+          <h3>Recruiting Corner</h3>
+          <p class = "subhead-italics">College Football: In the palm of your hands</p>
+          <br> 
+          <p class = "normaltext">Tools/Technologies: UX Research,
+            UI Design, Figma, User Interviews</p>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class = "project-card-blue">
+        <div class = "project-content">
+
+          <a href="https://docs.google.com/document/d/1Lx-mu1D_MX4aAxy_Fzcq4EPfFDhoa-ecWoua1oDzWYI/edit" target="_blank">
+            <img class = project-logo src="../images/Lifting_Buddy_Preview.png" alt="Lifting Buddy Preview">
+          </a>
+        
+          <div class="card-text">
+
+            <h3>Lifting Buddy</h3>
+            <p class = "subhead-italics">A new lifter's best friend</p>
+            <br> 
+            <p class = "normaltext">Tools/Technologies: UX Research,
+              UI Design, Adobe XD, User Interviews</p>
+
+          </div>
+
+          </div>
+        
+      </div>
+
+      <div class = "project-card-gray">
+        <div class = "project-content">
+
+          <a href="https://www.figma.com/file/P3cWMgynFNwv9MwSxr1UzD/Ford-ETravel?node-id=0%3A1" target="_blank">
+            <img class = project-logo src="../images/Ford_Car.jpg" alt="Ford Car">
+          </a>
+        
+        <div class="card-text">
+
+          <h3>Ford E-Travel</h3>
+          <p class = "subhead-italics">Ford Electric Vehicles: On Demand</p>
+          <br> 
+          <p class = "normaltext">Tools/Technologies: Product Management, UI design, Prototyping
+            Wireframing
+          </p>
+          </div>
+
+        </div>
+        
+      </div>
+
+      <div class = "project-card-blue">
+        <div class = "project-content">
+
+          <a href="https://www.figma.com/proto/bJwyP1ZD5JnMx4Ovjrga6m/ENTR390-DP1-Proto?page-id=0%3A1&node-id=19%3A1020&starting-point-node-id=19%3A1020" target="_blank">
+            <img class = project-logo src="../images/WTT.png" alt="Wolverine Ticket Transfer Logo">
+          </a>
+        
+          <div class="card-text">
+
+            <h3>Wolverine Ticket Transfer</h3>
+            <p class = "subhead-italics">Buy and Sell like a Wolverine</p>
+            <br> 
+            <p class = "normaltext">Tools/Technologies: UI Design, Figma, Prototyping, Wireframing, Persona Development,
+              Empathy Mapping
+            </p>
+
+          </div>
+
+          </div>
+        
+      </div>
+
+
+
+    </div>
+
+    <div class="padding"></div>
+
+  </div>
+
+
+
+  <footer>
+    <p class = "footer-logo">RE</p> 
+    <div class = "sm-links">
+      <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
+        <img class = "sm-icon" src="../images/instagram.svg" alt="instagram">
+      </a>
+  
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="../images/twitter.svg" alt="twitter">
+      </a>
+
+
+      <a href="https://www.linkedin.com/in/rohan-erasala-807bb5169/" target="_blank">
+        <img class = "sm-icon" src="../images/linkedin.svg" alt="LinkedIn">
+      </a>
+
+    </div>
+  </footer>
+  
+  
+</body>
+
+
+

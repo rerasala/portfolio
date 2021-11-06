@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="images/logo_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Rohan Erasala's Website</title>
+  </head>
+
+
+<header>
+
+  <script>
+    function displayMenu() {
+      if (document.getElementById("navElements").style.display === "block") {
+        document.getElementById("navElements").style.display = "none";
+      } else {
+        document.getElementById("navElements").style.display = "block";
+      }
+
+      if(document.getElementById("button-icon").src === "../images/ci_hambuger.png") {
+        document.getElementById("button-icon").src = "../images/x_icon.png";
+      }
+    }
+
+    function hideMenu() {
+      
+      document.getElementById("navElements").style.display = "none";
+      
+    }
+
+
+  </script>
+
+  <nav>
+    <a id = "logo" href="#home" onclick="displayMenu()">RE</a>
+    <div id="navElements">
+      <a class = "navLink current" href="#home" onclick="hideMenu()">Home</a>
+      <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
+      <a class = "navLink" href="projects.html" onclick="hideMenu()">Projects</a>
+      <a class = "navLink" href="#contact" onclick="hideMenu()">Gallery</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+      <img id = "button-icon" src="../images/ci_hamburger.png"></i>
+    </a>
+  </nav>
+
+</header>
+
+<body>
+  
+  <div id = "home-box">
+    <div class = "image-container">
+      <img class = "header-img" src="../images/Header.png" alt="Flowers in Chania">
+    </div>
+  
+    <div class = "intro-text">
+      <h1>Hello!</h1>
+      <h2>I'm Rohan Erasala</h2>
+      <h3>I’m a designer, developer, engineer, guitarist, and more!</h3>
+      <div class = "button-container">
+        <a class = "resume-btn" href="../Files/resume_design.pdf" target="_blank">View My Resume</a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p class = "footer-logo">RE</p> 
+    <div class = "sm-links">
+      <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
+        <img class = "sm-icon" src="../images/instagram.svg" alt="instagram">
+      </a>
+  
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="../images/twitter.svg" alt="twitter">
+      </a>
+
+
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="../images/linkedin.svg" alt="LinkedIn">
+      </a>
+
+    </div>
+  </footer>
+  
+</body>
+
+

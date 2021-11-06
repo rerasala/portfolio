@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="images/logo_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Rohan Erasala's Website</title>
+  </head>
+
+
+<header>
+
+  <script>
+    function displayMenu() {
+      if (document.getElementById("navElements").style.display === "block") {
+        document.getElementById("navElements").style.display = "none";
+      } else {
+        document.getElementById("navElements").style.display = "block";
+      }
+
+      if(document.getElementById("button-icon").src === "../images/ci_hambuger.png") {
+        document.getElementById("button-icon").src = "../images/x_icon.png";
+      }
+      
+    }
+  </script>
+
+  <nav>
+    <a id = "logo" href="#home" onclick="displayMenu()">RE</a>
+    <div id="navElements">
+      <a class = "navLink" href="index.html">Home</a>
+      <a class = "navLink current" href="about.html">About</a>
+      <a class = "navLink" href="projects.html">Projects</a>
+      <a class = "navLink" href="Gallery.html">Gallery</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+      <img id = "button-icon" src="../images/ci_hamburger.png"></i>
+    </a>
+  </nav>
+
+</header>
+
+<body>
+  
+  <div class = "about-container">
+    <div class = "img-container">
+      <img src="../images/about_img.png" alt="Pictures of Rohan Erasala">
+    </div>
+    
+    <div class = "about-text-container">
+      <h2>About Me</h2>
+      <h3>Hello! I’m Rohan Erasala, an undergraduate student at the University of Michigan. 
+        I’m a designer, developer, engineer, and so much more! On my website, you can view 
+        my projects, my work, and my band! </h3> 
+
+        <h3>My Story:<br><br>
+        I was born on September 23rd, 2001 in Novi, Michigan where I 
+        lived for 8 years until I moved to Northville Michigan. After 
+        graduating from Northville High School, I moved onto the University of Michigan to 
+        study computer science. <br><br> It was at the University of Michigan that I developed a 
+        strong interest in computers, applications, websites, and how they are designed 
+        and how they operate. After working at companies such as Auria, Quicken Loans, 
+        and Ford, I have developed a variety of technical and soft skills that have made 
+        me an excellent fit for any role in technology.</h3>
+
+        <div class = "padding"></div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p class = "footer-logo">RE</p> 
+    <div class = "sm-links">
+      <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
+        <img class = "sm-icon" src="../images/instagram.svg" alt="instagram">
+      </a>
+  
+      <img class = "sm-icon" src="../images/twitter.svg" alt="instagram">
+      <img class = "sm-icon" src="../images/linkedin.svg" alt="instagram">
+    </div>
+  </footer>
+  
+  
+</body>
+
+
+
