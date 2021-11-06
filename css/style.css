@@ -64,7 +64,7 @@ nav a.icon {
 
 h1{
   padding: 20px;
-  color: #0085FF;
+  color: #9ed0ff;
   font-weight: bolder;
   font-size: 84px;
 }
@@ -248,7 +248,7 @@ footer {
 .project-card-blue {
   max-width: 400px;
   margin: auto;
-  background: #0085FF;
+  background: #003363;
   border: black;
   border-radius: 20px;
   margin-bottom: 40px;
