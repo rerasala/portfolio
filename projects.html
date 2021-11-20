@@ -11,37 +11,61 @@
   </head>
 
 
-<header>
+  <header>
 
-  <script>
-    function displayMenu() {
-      if (document.getElementById("navElements").style.display === "block") {
+    <script>
+  
+        $(window).resize(function() {
+          if(screen.width >= 800){
+          document.getElementById("navElements").style.display = "flex"
+        } else {
+          document.getElementById("navElements").style.display = "none";
+        }
+        });
+  
+      window.addEventListener("load", function() {
+        if(screen.width >= 800){
+          document.getElementById("navElements").style.display = "flex"
+        } else {
+          document.getElementById("navElements").style.display = "none";
+        }
+      }); 
+  
+      function displayMenu() {
+        if (document.getElementById("navElements").style.display === "flex") {
+          document.getElementById("navElements").style.display = "none";
+        } else {
+          document.getElementById("navElements").style.display = "flex";
+        }
+  
+        if(document.getElementById("button-icon").src === "images/ci_hambuger.png") {
+          document.getElementById("button-icon").src = "images/x_icon.png";
+        }
+      }
+  
+      function hideMenu() {
+        
         document.getElementById("navElements").style.display = "none";
-      } else {
-        document.getElementById("navElements").style.display = "block";
+        
       }
-
-      if(document.getElementById("button-icon").src === "images/ci_hambuger.png") {
-        document.getElementById("button-icon").src = "images/x_icon.png";
-      }
-      
-    }
-  </script>
-
-  <nav>
-    <a id = "logo" href="#home" onclick="displayMenu()">RE</a>
-    <div id="navElements">
-      <a class = "navLink" href="index.html">Home</a>
-      <a class = "navLink" href="about.html">About</a>
-      <a class = "navLink current" href="projects.html">Projects</a>
-      <a class = "navLink" href="Gallery.html">Gallery</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
-      <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
-    </a>
-  </nav>
-
-</header>
+  
+  
+    </script>
+  
+    <nav>
+      <a id = "logo" href = "index.html"> RE</a>
+      <div id="navElements">
+        <a class = "navLink" onclick="hideMenu()">Home</a>
+        <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
+        <a class = "navLink current" href="projects.html" onclick="hideMenu()">Projects</a>
+        <a class = "navLink" href="gallery.html" onclick="hideMenu()">Gallery</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+        <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
+      </a>
+    </nav>
+  
+  </header>
 
 <body>
 
@@ -49,7 +73,7 @@
 
     <div class = "header">
       <h1>My Projects</h1>
-      <h2>Click any picture to view the documentation/prototype!</h2>
+      <h2>Click any picture to view the documentations and prototypes!</h2>
     </div>
 
     <div class = "card-container">

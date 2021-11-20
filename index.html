@@ -14,11 +14,28 @@
 <header>
 
   <script>
+
+      $(window).resize(function() {
+        if(screen.width >= 800){
+        document.getElementById("navElements").style.display = "flex"
+      } else {
+        document.getElementById("navElements").style.display = "none";
+      }
+      });
+
+    window.addEventListener("load", function() {
+      if(screen.width >= 800){
+        document.getElementById("navElements").style.display = "flex"
+      } else {
+        document.getElementById("navElements").style.display = "none";
+      }
+    }); 
+
     function displayMenu() {
-      if (document.getElementById("navElements").style.display === "block") {
+      if (document.getElementById("navElements").style.display === "flex") {
         document.getElementById("navElements").style.display = "none";
       } else {
-        document.getElementById("navElements").style.display = "block";
+        document.getElementById("navElements").style.display = "flex";
       }
 
       if(document.getElementById("button-icon").src === "images/ci_hambuger.png") {
@@ -36,12 +53,12 @@
   </script>
 
   <nav>
-    <a id = "logo" href="#home" onclick="displayMenu()">RE</a>
+    <a id = "logo" href = "index.html"> RE</a>
     <div id="navElements">
-      <a class = "navLink current" href="#home" onclick="hideMenu()">Home</a>
+      <a class = "navLink current" href = "index.html" onclikc = hideMenu()>Home</a>
       <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
       <a class = "navLink" href="projects.html" onclick="hideMenu()">Projects</a>
-      <a class = "navLink" href="Gallery.html" onclick="hideMenu()">Gallery</a>
+      <a class = "navLink" href="gallery.html" onclick="hideMenu()">Gallery</a>
     </div>
     <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
       <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
@@ -53,18 +70,65 @@
 <body>
   
   <main id = "home-box">
-    <div class = "image-container">
-      <img class = "header-img" src="images/Header.png" alt="Header img">
-    </div>
-  
-    <div class = "intro-text">
-      <h1>Hello!</h1>
-      <h2>I'm Rohan Erasala</h2>
-      <h3>I’m a designer, developer, engineer, guitarist, and more!</h3>
-      <div class = "button-container">
-        <a class = "resume-btn" href="Files/resume_design.pdf" target="_blank">View My Resume</a>
+
+    <div class="header-box">
+      <div class = "image-container">
+        <img class = "header-img" src="images/Header.png" alt="Header img">
+      </div>
+    
+      <div class = "intro-text">
+        <h1>Hello!</h1>
+        <h2>I'm Rohan Erasala!!</h2>
+        <h3>I’m a designer, developer, engineer, guitarist, and more!</h3>
+        <div class = "button-container">
+          <a class = "resume-btn" href="Files/resume_design.pdf" target="_blank">View My Resume</a>
+        </div>
       </div>
     </div>
+  
+    <div class="padding"></div>
+    <hr>
+
+    <div class="recent-work">
+      <div class="padding"></div>
+      <h2>Here's some work I've been doing recently</h2>
+      <div class="recent-project">
+        <h3>Design Project: Umbrella</h3>
+
+        <div class="recent-text">
+          <img class = "recent-icon" src="images/umbrella_logo.png" alt="umbrella logo">
+
+          <p>Umbrella is a project I'm currently working on in my Digital Product Design Class. Umbrella is a concept application that 
+            will be created in Figma, using Balsamiq for high-fidelity wireframing. Ultiimately, Umbrella will be an
+            application that will help users decide what accesories or outerwear they will need in order to
+            combat incliment weather around them. An intuitive, clean interface, and calendar integration will hopefully
+            make umbrella the weather app for busy people.
+          </p>
+        </div>
+
+      </div>
+      
+      <div class="recent-project">
+        <h3>Design Project: KTP Rush Web App</h3>
+
+        <div class="recent-text">
+          <img class = "recent-icon" src="images/ktp_logo.png" alt="umbrella logo">
+
+          <p> KTP is the professional technology fraternity that I am a part of. An important aspect of being a brother in 
+            KTP is playing a part in the "rush" process every year that brings in more applicants to KTP. 
+            On one night called "Decision Night", brothers must evaluate 40 rushees and select the top candidates
+            to be a part of KTP. In order to view all of the vital information concerning interview scores, 
+            application essays, etc., KTP has decided to make a web app that allows brothers to easily view
+            all of this information on decision night. As head of the KTP design commitee, I am currently leading a 
+            team of 10 members to design this rush application.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+    
+    <div class="padding"></div>
 
   </main>
 

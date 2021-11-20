@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="images/logo_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;1,800&display=swap" rel="stylesheet">
+    <title>Rohan Erasala's Website</title>
+  </head>
+
+
+  <header>
+
+    <script>
+  
+        $(window).resize(function() {
+          if(screen.width >= 800){
+          document.getElementById("navElements").style.display = "flex"
+        } else {
+          document.getElementById("navElements").style.display = "none";
+        }
+        });
+  
+      window.addEventListener("load", function() {
+        if(screen.width >= 800){
+          document.getElementById("navElements").style.display = "flex"
+        } else {
+          document.getElementById("navElements").style.display = "none";
+        }
+      });
+  
+      function displayMenu() {
+        if (document.getElementById("navElements").style.display === "flex") {
+          document.getElementById("navElements").style.display = "none";
+        } else {
+          document.getElementById("navElements").style.display = "flex";
+        }
+  
+        if(document.getElementById("button-icon").src === "images/ci_hambuger.png") {
+          document.getElementById("button-icon").src = "images/x_icon.png";
+        }
+      }
+  
+      function hideMenu() {
+        
+        document.getElementById("navElements").style.display = "none";
+        
+      }
+  
+  
+    </script>
+  
+    <nav>
+      <a id = "logo" href = "index.html"> RE</a>
+      <div id="navElements">
+        <a class = "navLink" href = "index.html" onclikc = hideMenu()>Home</a>
+        <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
+        <a class = "navLink" href="projects.html" onclick="hideMenu()">Projects</a>
+        <a class = "navLink current" href="gallery.html" onclick="hideMenu()">Gallery</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+        <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
+      </a>
+    </nav>
+  
+  </header>
+
+<body>
+
+
+  <main class = "gallery-content">
+
+    <h1>Gallery</h1>
+    <h2>Some recent highlights featuring my friends and family!!</h2>
+
+    <div class="gallery-grid">
+
+      <div class="gallery-item-1">
+
+        <div class = "picture-front">
+          <img src="images/IMG_7136.JPG" alt="lavendar fields" class="gallery-img">
+        </div>
+
+        <div class="picture-caption">
+          <h3> The lavendar fields of Charlevoix, Michigan</h3>
+        </div>
+
+      </div>
+
+      <div class="gallery-item-2">
+        <div class = "picture-front">
+          <img src="images/IMG_0587.jpeg" alt="Date party" class="gallery-img">
+        </div>
+
+        <div class="picture-caption">
+          <h3> Date Party @ Umich!!</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item-3">
+        <div class = "picture-front">
+          <img src="images/IMG_9054.png" alt="san diego" class="gallery-img">
+        </div>
+
+        <div class="picture-caption">
+          <h3>My California Cousins and I in San Diego!</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item-4">
+        <div class = "picture-front">
+          <img src="images/IMG_6834.png" alt="My girlfriend, Grace" class="gallery-img">
+        </div>
+
+        <div class="picture-caption">
+          <h3>Me and my girlfriend Grace!</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item-5">
+
+        <div class = "picture-front">
+          <img src="images/IMG_9599.png" alt="Times Square" class="gallery-img">
+        </div>
+
+        <div class="picture-caption">
+          <h3>Times Square with my sister, Ramya!</h3>
+        </div>
+
+      </div>
+
+      <div class="gallery-item-6">
+
+        <div class = "picture-front">
+          <img src="images/IMG_8780.png" alt="Burns Park" class="gallery-img">
+        </div>
+
+        <div class="picture-caption">
+          <h3>Me and my roommates on the buddy bench @ Burns Park!</h3>
+        </div>
+
+      </div>
+
+      <div class="gallery-item-7">
+        <div class = "picture-front">
+          <img src="images/IMG_8233.JPG" alt="Michigan Game" class="gallery-img">
+        </div>
+
+        <div class="picture-caption">
+          <h3>At the Michigan game!!</h3>
+        </div>
+      </div>
+      
+      <div class="gallery-item-8">
+        <div class = "picture-front">
+          <img src="images/IMG_9940.png" alt="Tailgaiting" class="gallery-img">
+        </div>
+
+        <div class="picture-caption">
+          <h3>Tailgaiting with my friend Suyash!</h3>
+        </div>
+      </div>
+
+      <div class="gallery-item-9">
+
+        <div class = "picture-front">
+          <img src="images/IMG_0050.png" alt="Group Frat Photo" class="gallery-img">
+        </div>
+
+        <div class="picture-caption">
+          <h3>Fun times with some frat guys!</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+  </main>
+  
+
+
+  <footer>
+    <p class = "footer-logo">RE</p> 
+    <div class = "sm-links">
+      <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
+        <img class = "sm-icon" src="images/instagram.svg" alt="instagram">
+      </a>
+  
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="images/twitter.svg" alt="twitter">
+      </a>
+
+
+      <a href="https://www.linkedin.com/in/rohan-erasala-807bb5169/" target="_blank">
+        <img class = "sm-icon" src="images/linkedin.svg" alt="LinkedIn">
+      </a>
+
+    </div>
+  </footer>
+  
+  
+</body>
+
+</html>
+
