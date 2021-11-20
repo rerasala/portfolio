@@ -16,7 +16,7 @@
 
     <script>
   
-        $(window).resize(function() {
+        window.addEventListener("resize", function() {
           if(screen.width >= 800){
           document.getElementById("navElements").style.display = "flex"
         } else {
@@ -56,7 +56,7 @@
     <nav>
       <a id = "logo" href = "index.html"> RE</a>
       <div id="navElements">
-        <a class = "navLink" href = "index.html" onclikc = hideMenu()>Home</a>
+        <a class = "navLink" href = "index.html" onclick = hideMenu()>Home</a>
         <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
         <a class = "navLink" href="projects.html" onclick="hideMenu()">Projects</a>
         <a class = "navLink current" href="gallery.html" onclick="hideMenu()">Gallery</a>
