@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="images/logo_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nobile&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rohan Erasala's Website</title>
+  </head>
+
+
+<header>
+
+  <script>
+
+      window.addEventListener("resize", function() {
+        if(window.innerWidth >= 800){
+        document.getElementById("navElements").style.display = "flex"
+      } else {
+        document.getElementById("navElements").style.display = "none";
+      }
+      });
+
+    window.addEventListener("load", function() {
+      if(window.innerWidth >= 800){
+        document.getElementById("navElements").style.display = "flex"
+      } else {
+        document.getElementById("navElements").style.display = "none";
+      }
+    }); 
+
+    function displayMenu() {
+      if (document.getElementById("navElements").style.display === "flex") {
+        document.getElementById("navElements").style.display = "none";
+      } else {
+        document.getElementById("navElements").style.display = "flex";
+      }
+
+      if(document.getElementById("button-icon").src === "images/ci_hambuger.png") {
+        document.getElementById("button-icon").src = "images/x_icon.png";
+      }
+    }
+
+    function hideMenu() {
+      
+      document.getElementById("navElements").style.display = "none";
+      
+    }
+
+
+  </script>
+
+  <nav>
+    <a id = "logo" href = "index.html"> RE</a>
+    <div id="navElements">
+      <a class = "navLink current" href = "index.html" onclick = hideMenu()>Home</a>
+      <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
+      <a class = "navLink" href="projects.html" onclick="hideMenu()">Projects</a>
+      <a class = "navLink" href="gallery.html" onclick="hideMenu()">Gallery</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+      <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
+    </a>
+  </nav>
+
+</header>
+
+<body>
+  
+  <main id = "home-box">
+
+    <div class="img-box">
+        <img class = "project-img-422" src="images/spotify_app.png" alt="Spotify App">
+    </div>
+
+    <div class="title">
+
+        
+        <div class="padding"></div>
+
+        <h1>Competitive Analysis - Spotify</h1>
+
+        
+
+        <div class="padding"></div>
+    </div>
+
+    
+    <section id = "white">
+
+        <div class="project-box-422">
+
+            <h4>Context:</h2>
+                <br>
+                <br>
+            <p>
+                This was a project I took on as a part of my class SI 422 - Needs Assessment and Usability Evaluation. Our task was to run a 
+                competitive analysis on a product of our choosing. Our group's vested interest drew us toward Spotify, our preferred music 
+                streaming platform. We wanted to run a competitive analysis on Spotify to determine what features allowed it to stand out from
+                the competition, and what features spotify needed to catch up to.
+                <br>
+                <br>
+                <strong>Duration: </strong> 2 weeks
+                <br>
+                <strong>Team: </strong> Rohan Erasala, Grace Garmo, Anne George, Manasi Sridhar
+                <br>
+                <strong>Position: </strong> researcher
+
+            </p>
+
+
+        </div>
+
+        <div class="project-box-422">
+
+            <h4>Background:</h2>
+                <br>
+            <p>
+                <br>
+
+                Music streaming services are the new way for people of all ages and technology experience levels to experience music.
+                    Gone are the days of paying $1.29 to own your favorite song. Now, people can simply search whatever song they 
+                    choose from a library of millions of songs at anytime, anywhere. With the rise of music streaming has come the invention
+                    of music streaming services - different ways to access the music that users choose. Currently, the main players in the
+                    game are Apple Music, Spotify, Soundcloud, Youtube, and Tidal. The purpose of our research was to answer two important questions:
+
+                <br>
+                <br>
+
+
+                <strong>Research Question #1: </strong>How do different music platforms provide users with an easy way to find and discover new music?
+                <br>
+                <br>
+                <strong>Research Question #2: </strong>What unique features in different music streaming platforms set them apart from others?
+
+            </p>
+
+        </div>
+
+        <div class="project-box-422">
+
+            <h4>Process and Methods:</h2>
+                <br>
+                <br>
+            <p>
+               <strong>Step 1: Identify Competition</strong> <br>
+                <br>
+               We started by identifying and classifying our competition as direct, indirect, partial, parallel, or analogous. In doing so,
+               we analyzed the target market of each service.
+               We idetified our competition as follows: <br><br>
+
+               <strong>Direct: </strong> <br> Apple Music, Pandora, Amazon Music, Tidal, Youtube Music <br> <br>
+
+               <strong>Indirect: </strong> <br> iTunes store, Google Play store, Record Stores <br> <br>
+
+               <strong>Partial: </strong> <br> Youtube (website) <br> <br>
+
+               <strong>Parallel: </strong> <br> Soundcloud <br> <br>
+
+               <strong>Analogous: </strong> <br> Beats <br> <br>
+
+               <strong>Step 2: Determine Attributes</strong> <br> <br>
+
+               Next, we needed to determine what attributes we want to compare among each of the services. We started by looking at the goals
+               of the products and the features that lined up with them. We then condensed our list to important features that we thought
+               could be compared among all the services.<br><br>
+
+               <strong>Final Attributes: Amount of content, exclusive hardware integration, user interface, music suggestions, 
+                   offline listening options.
+               </strong> 
+
+               <br><br>
+
+
+               <strong>Step 3: Conduct Analysis</strong> <br> <br>
+
+               We collected our analysis over the course of a week. I was responsible for conducting the investigation into the user interface of each 
+               application. I wanted to evaluate each software based on how easy they were to navigate, how easy it was to find what I was looking for,
+               the overall aesthetic of each software, and how the software was laid out. I was also responsible for researching the 
+               different exclusive hardware integrations that each service offered. The final results of our investigation are here.
+
+            <br>
+            <br>
+
+            </p>
+
+            <div id = "view-results" class="button-container">
+                <a class = "view-content-btn" href="https://docs.google.com/spreadsheets/d/1YU6u29pzD4oNVp5CYgI0Yq86m7go5JV7Lwre5qSiCRo/edit#gid=0" target="_blank">View Results</a>
+            </div>
+            
+
+        </div>
+
+        <div class="project-box-422">
+
+            <h4>Outcomes:</h2>
+                <br>
+                <br>
+            <p>
+
+                <strong>Recommendations:</strong><br><br>
+
+                I recommend that our platform follows established design principles that are seen in a lot of different platforms. This includes pages that are designed around recommending music, searching, discovering playlists and new music, and accessing a library of music that the user has. In addition, I recommend that our platform also creates more hardware that is unique to the platform so that users can be drawn to the ease of use that is created. 
+
+                <br><br>
+
+                <strong>Next Steps:</strong><br><br>
+
+                If we were to conduct interviews with user's of our competitors, we would like to learn how users feel about our platform and the reasons that they decided to choose their platform over ours. A question that we would ask to the users is “What are the unique features that drew you to use your current music streaming platform?”. We also want to learn more about how platforms are a part of our users lives and where they use music streaming platforms. We would ask them, “Where and in what scenarios do you use your music streaming platforms?”.
+
+            </p>
+
+        </div>
+      
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p class = "footer-logo">RE</p> 
+    <div class = "sm-links">
+      <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
+        <img class = "sm-icon" src="images/instagram.svg" alt="instagram">
+      </a>
+  
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="images/twitter.svg" alt="twitter">
+      </a>
+
+
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="images/linkedin.svg" alt="LinkedIn">
+      </a>
+
+    </div>
+  </footer>
+  
+</body>
+
+</html>
