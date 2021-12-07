@@ -103,7 +103,7 @@ h3{
   color: white;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 15px;
@@ -145,13 +145,14 @@ h3{
   margin: auto;
   justify-content: center;
   margin-bottom: 60px;
-  padding: 30px;
 }
 
-h4 {
+.project-text h2 {
   font-family: 'Montserrat',sans-serif;
   font-weight: 900;
   font-size: 36px;
+  padding: 0;
+  text-align: left;
 }
 
 .line {
@@ -161,18 +162,15 @@ h4 {
   margin-bottom: 40px;
 }
 
-h5 {
-  font-family: 'Nobile', sans-serif;
-  font-style: italic;
-  font-weight: 100;
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
 .project-text {
   color: black;
   padding: 40px;
   max-width: 800px;
+}
+
+.project-text p {
+  font-size: 14px;
+  margin-top: 40px;
 }
 
 .sm-links {
@@ -257,56 +255,20 @@ footer {
   padding-bottom: 100px;
 }
 
-.header {
-  text-align: center;
-  padding: 40px;
-}
-
-.projects-container{
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.project-content {
-  text-align: center;
-  padding-bottom: 30px;
-}
-
-.project-logo{
-  width: 100%;
-  line-height: 40px;
-
-}
-
-.subhead-italics {
-  font-style: italic;
-  font-size: 18px;
-  color: black;
-}
-
 .project-content h3 {
   font-weight: bolder;
   color: black;
   font-size: 28px;
 }
 
-.normaltext {
-  text-align: center;
-  color: black;
-}
-
-.card-text{
-  padding: 20px;
-}
-
-.gallery-content {
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.gallery-content h2, h3 {
+.gallery-content h2 {
   text-align: center;
   padding: 20px;
+  font-size: 20px;
+}
+
+.gallery-content h3 {
+  font-size: 14px;
 }
 
 .gallery-grid {
@@ -386,10 +348,6 @@ footer {
   grid-row-end: 11;
 }
 
-.picture-caption h3 {
-  font-size: 14px;
-}
-
 p {
   color: black;
   font-size: 18px;
@@ -433,47 +391,6 @@ p {
   flex-direction: column;
 }
 
-.title {
-  margin: auto;
-}
-
-.project-box-422 {
-  padding: 40px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.img-box {
-  margin: auto;
-  text-align: center;
-  width: 100%;
-}
-
-.project-img-422 {
-  margin: auto;
-  object-fit: cover;
-  height: 600px;
-  width: 100%;
-}
-
-.view-content-btn {
-  margin: auto;
-  width: 200px;
-  background-color: #2898FF;
-  color: white;
-  height: 50px;
-  font-size: 18px;
-  border-radius: 20px;
-  border: none;
-  margin-top: 80px;
-  text-decoration: none;
-  padding: 20px;
-}
-
-#view-results {
-  text-align: center;
-}
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -511,7 +428,7 @@ input[type=submit]:hover {
 .contact-container {
   border-radius: 15px;
   padding: 20px;
-  width: 60%;
+  width: 80%;
   margin: auto;
   font-family: 'Open Sans', sans-serif;
   color: white;
@@ -565,13 +482,9 @@ input[type=submit]:hover {
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-
-  /* Requirement 3a code here*/
   position: absolute;
   top: -40px;
 }
-
-/* Requirement 3b code here*/
 
 .skip a:focus{
   top: 0px;
@@ -592,6 +505,21 @@ input[type=submit]:hover {
 .intro-text h2 {
   animation: fadeInAnimation linear 2s;
   animation-delay: 3s;
+}
+
+.project-text h3 {
+  font-family: 'Nobile', sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 18px;
+  margin-bottom: 40px;
+  padding: 0;
+  text-align: left;
+  margin: 0;
+}
+
+#td-instructions {
+  display: none;
 }
 
 @media (min-width: 800px){
@@ -698,11 +626,6 @@ input[type=submit]:hover {
     text-align: center;
   }
 
-  .projects-container .header h2 {
-    font-size: 28px;
-    text-align: center;
-  }
-
   .intro-text h2, .intro-text h1, .intro-text h3{
     text-align: left;
   }
@@ -774,6 +697,7 @@ input[type=submit]:hover {
 
   .project {
     flex-direction: row;
+    padding: 30px;
   }
 
   #FordProject .pcard {
@@ -786,6 +710,15 @@ input[type=submit]:hover {
 
   .gallery-pic {
     max-width: 350px;
+  }
+
+  .contact-container {
+    width: 60%;
+  }
+
+  #td-instructions {
+    margin-top: 40px;
+    display: block;
   }
 
   
@@ -841,6 +774,10 @@ input[type=submit]:hover {
     display: block;
     font-size: 20px;
     cursor: pointer;
+  }
+
+  .project-text p {
+    font-size: 16px;
   }
 
 }
@@ -951,5 +888,5 @@ input[type=submit]:hover {
       animation: none;
     }
     
-    
+
   }
