@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="images/png" href="images/logo_icon.png"/>
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nobile&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Contact - Rohan Erasala</title>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-011TLFCVZF"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-011TLFCVZF');
+        </script>
+
+      </head>
+
+
+  <header>
+
+    <script src="js/script.js"></script>
+
+    <div class="skip"><a href="#skipto">Skip to Main Content</a></div>
+  
+    <nav>
+      <a id = "logo" href = "index.html"> RE</a>
+      <div id="navElements">
+        <a class = "navLink" href = "index.html" onclick = "hideMenu()" >Home</a>
+        <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
+        <a class = "navLink" href="projects.html" onclick="hideMenu()">Projects</a>
+        <a class = "navLink" href="gallery.html" onclick="hideMenu()">Gallery</a>
+        <a class = "navLink current" href="contact.html" onclick="hideMenu()">Contact</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+        <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
+      </a>
+    </nav>
+  
+  </header>
+
+<body>
+  
+  <main>
+
+    <h1>Say Hello!</h1>
+    <h2>I'd love to hear your feedback, questions, or anything else</h2>
+
+    <div class="contact-container" id = "skipto">
+        <form action="https://formspree.io/f/moqragzp"
+        method="POST"
+        >
+      
+          <label for="fname">Full Name</label>
+          <input type="text" name="name" placeholder="ex. John Smith">
+
+          <label for="email">Email</label>
+          <input type="text" name="email" placeholder="ex. john@john.com">
+      
+          <label for="c-content">What would you like to say?</label>
+          <textarea id="contactfield" name="content" placeholder = "John is great"></textarea>
+      
+          <input type="submit" value="Submit">
+      
+        </form>
+      </div>
+
+  </main>
+
+  <footer>
+    <p class = "footer-logo">RE</p> 
+    <div class = "sm-links">
+      <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
+        <img class = "sm-icon" src="images/instagram.svg" alt="instagram">
+      </a>
+  
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="images/twitter.svg" alt="twitter">
+      </a>
+
+      <a href="https://www.linkedin.com/in/rohan-erasala-807bb5169/" target="_blank">
+        <img class = "sm-icon" src="images/linkedin.svg" alt="LinkedIn">
+      </a>
+
+    </div>
+  </footer>
+  
+  
+</body>
+
+</html>
+

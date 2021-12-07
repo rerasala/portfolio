@@ -7,8 +7,13 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <title>Rohan Erasala's Website</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nobile&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Projects - Rohan Erasala</title>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-011TLFCVZF"></script>
     <script>
@@ -19,166 +24,156 @@
       gtag('config', 'G-011TLFCVZF');
     </script>
     
-    
   </head>
 
 
   <header>
 
-    <script>
-  
-        window.addEventListener("resize", function() {
-          if(screen.width >= 800){
-          document.getElementById("navElements").style.display = "flex"
-        } else {
-          document.getElementById("navElements").style.display = "none";
-        }
-        });
-  
-      window.addEventListener("load", function() {
-        if(screen.width >= 800){
-          document.getElementById("navElements").style.display = "flex"
-        } else {
-          document.getElementById("navElements").style.display = "none";
-        }
-      }); 
-  
-      function displayMenu() {
-        if (document.getElementById("navElements").style.display === "flex") {
-          document.getElementById("navElements").style.display = "none";
-        } else {
-          document.getElementById("navElements").style.display = "flex";
-        }
-  
-        if(document.getElementById("button-icon").src === "images/ci_hambuger.png") {
-          document.getElementById("button-icon").src = "images/x_icon.png";
-        }
-      }
-  
-      function hideMenu() {
-        
-        document.getElementById("navElements").style.display = "none";
-        
-      }
-  
-  
-    </script>
-  
-    <nav>
-      <a id = "logo" href = "index.html"> RE</a>
-      <div id="navElements">
-        <a class = "navLink" href="index.html" onclick="hideMenu()">Home</a>
-        <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
-        <a class = "navLink current" href="projects.html" onclick="hideMenu()">Projects</a>
-        <a class = "navLink" href="gallery.html" onclick="hideMenu()">Gallery</a>
+    <script src="js/script.js"></script>
+
+    <div class="skip"><a href="#skipto">Skip to Main Content</a></div>
+
+    <div class="parallax">
+
+      <nav>
+        <a id = "logo" href = "index.html"> RE</a>
+        <div id="navElements">
+          <a class = "navLink" href = "index.html" onclick = "hideMenu()" >Home</a>
+          <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
+          <a class = "navLink current" href="projects.html" onclick="hideMenu()">Projects</a>
+          <a class = "navLink" href="gallery.html" onclick="hideMenu()">Gallery</a>
+          <a class = "navLink" href="contact.html" onclick="hideMenu()">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+          <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
+        </a>
+      </nav>
+
+
+      <div class = "projects-header">
+        <h1>My Projects</h1>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
-        <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
-      </a>
-    </nav>
+    </div>
   
   </header>
 
 <body>
 
-  <main class = "projects-container">
+  <main id = "skipto">
 
-    <div class = "header">
-      <h1>My Projects</h1>
-      <h2>Click any picture to view the documentations and prototypes!</h2>
-    </div>
+    <section id = "white">
 
-    <div class = "card-container">
+      <div class="recent-work">
 
-      <div class = "project-card-gray">
-        <div class = "project-content">
+        <div class="project">
 
-        <a href="https://docs.google.com/document/d/1swsUomdWmUrA-e1Nrz6lSLgfb-9GCOTS8vwrQegIT2E/edit" target="_blank">
-          <img class = project-logo src="images/RC_preview.png" alt="Recruiting Corner Preview">
-        </a>
-        
-        <div class="card-text">
-
-          <h3>Recruiting Corner</h3>
-          <p class = "subhead-italics">College Football: In the palm of your hands</p>
-          <br> 
-          <p class = "normaltext">Tools/Technologies: UX Research,
-            UI Design, Figma, User Interviews</p>
+          <div class="pcard">
+            <div class="pcard-inner">
+              <div class="pcard-front">
+                <img src="images/LB_prev.svg" alt="Lifting Buddy Logo">
+              </div>
+              <div tabindex = 0 class="pcard-back">
+                <a class = "project-tag-td" target = "_blank" href="https://docs.google.com/document/d/1Lx-mu1D_MX4aAxy_Fzcq4EPfFDhoa-ecWoua1oDzWYI/edit?usp=sharing">View project here</a>
+              </div>
+            </div>
           </div>
+          
+  
+          <div class="project-text">
+            <h4> Lifting Buddy</h4>
+            <div class="line"></div>
+            <h5> A beginner lifter's best friend</h5>
+            <p>
+              Lifting buddy is a concept lifting application that I designed, 
+              created, and prototyped in Adobe XD. This was my first design 
+              projects ever and it remains one that I am extremely proud of. 
+              While making the application, I consulted Apple’s Human 
+              Interface guidelines to ensure that it not only looked 
+              great but was usable too.
 
-        </div>
-        
-      </div>
+              <br>
+              <br>
 
-      <div class = "project-card-blue">
-        <div class = "project-content">
+              <a class = "project-tag-mobile" target = "_blank" href="https://docs.google.com/document/d/1Lx-mu1D_MX4aAxy_Fzcq4EPfFDhoa-ecWoua1oDzWYI/edit?usp=sharing">View project here</a>
 
-          <a href="https://docs.google.com/document/d/1Lx-mu1D_MX4aAxy_Fzcq4EPfFDhoa-ecWoua1oDzWYI/edit" target="_blank">
-            <img class = project-logo src="images/Lifting_Buddy_Preview.png" alt="Lifting Buddy Preview">
-          </a>
-        
-          <div class="card-text">
-
-            <h3>Lifting Buddy</h3>
-            <p class = "subhead-italics">A new lifter's best friend</p>
-            <br> 
-            <p class = "normaltext">Tools/Technologies: UX Research,
-              UI Design, Adobe XD, User Interviews</p>
-
-          </div>
-
-          </div>
-        
-      </div>
-
-      <div class = "project-card-gray">
-        <div class = "project-content">
-
-          <a href="https://www.figma.com/file/P3cWMgynFNwv9MwSxr1UzD/Ford-ETravel?node-id=0%3A1" target="_blank">
-            <img class = project-logo src="images/Ford_Car.jpg" alt="Ford Car">
-          </a>
-        
-        <div class="card-text">
-
-          <h3>Ford E-Travel</h3>
-          <p class = "subhead-italics">Ford Electric Vehicles: On Demand</p>
-          <br> 
-          <p class = "normaltext">Tools/Technologies: Product Management, UI design, Prototyping
-            Wireframing
-          </p>
-          </div>
-
-        </div>
-        
-      </div>
-
-      <div class = "project-card-blue">
-        <div class = "project-content">
-
-          <a href="https://www.figma.com/proto/bJwyP1ZD5JnMx4Ovjrga6m/ENTR390-DP1-Proto?page-id=0%3A1&node-id=19%3A1020&starting-point-node-id=19%3A1020" target="_blank">
-            <img class = project-logo src="images/WTT.png" alt="Wolverine Ticket Transfer Logo">
-          </a>
-        
-          <div class="card-text">
-
-            <h3>Wolverine Ticket Transfer</h3>
-            <p class = "subhead-italics">Buy and Sell like a Wolverine</p>
-            <br> 
-            <p class = "normaltext">Tools/Technologies: UI Design, Figma, Prototyping, Wireframing, Persona Development,
-              Empathy Mapping
             </p>
+          </div>
+          
+        </div>
 
+        <div class="project" id = "FordProject">
+
+          <div class="pcard">
+            <div class="pcard-inner">
+              <div class="pcard-front">
+                <img src="images/FET_prev.svg" alt="Ford E-Travel Logo">
+              </div>
+              <div class="pcard-back">
+                <a class = "project-tag-td" target = "_blank" href="https://docs.google.com/document/d/1Lx-mu1D_MX4aAxy_Fzcq4EPfFDhoa-ecWoua1oDzWYI/edit?usp=sharing">View project here</a>
+              </div>
+            </div>
+          </div>
+          
+  
+          <div class="project-text">
+            <h4>Ford E-Travel</h4>
+            <div class="line"></div>
+            <h5>Ford Electric Vehicles - one tap away</h5>
+            <p>
+              Ford E-Travel is an application I designed and prototyped in 
+              Figma as a part of the IT Innovation Challenge 
+              that took place during my internship at the Ford Motor Company. 
+              My team of 6 devised a zipcar-style service
+              where users could rent Ford Electric vehicles.
+
+              <br>
+              <br>
+
+              <a class = "project-tag-mobile" target = "_blank" href="https://www.figma.com/proto/P3cWMgynFNwv9MwSxr1UzD/Ford-ETravel?node-id=9%3A71&scaling=scale-down&page-id=0%3A1&starting-point-node-id=9%3A71">View project here</a>
+
+            </p>
           </div>
 
+        </div>
+
+        <div class="project">
+
+          <div class="pcard">
+            <div class="pcard-inner">
+              <div class="pcard-front">
+                <img src="images/WTT_prev.svg" alt="Wolverine Ticket Transfer Logo">
+              </div>
+              <div class="pcard-back">
+                <a class = "project-tag-td" target = "_blank" href="https://docs.google.com/document/d/1Lx-mu1D_MX4aAxy_Fzcq4EPfFDhoa-ecWoua1oDzWYI/edit?usp=sharing">View project here</a>
+              </div>
+            </div>
           </div>
-        
+          
+  
+          <div class="project-text">
+            <h4>Wolverine Ticket Transfer</h4>
+            <div class="line"></div>
+            <h5>Buy Blue. Go Blue.</h5>
+            <p>
+              Wolverine Ticket Transfer is an application I made for my entrepreneurship 390 class
+              that was designed in Balsamiq and Figma. The goal of this application was to be
+              a one stop hub for all ticket sales for Michigan football games, making the experience of
+              Michigan football that much better.
+
+              <br>
+              <br>
+
+              <a class = "project-tag-mobile" target = "_blank" href="https://www.figma.com/proto/bJwyP1ZD5JnMx4Ovjrga6m/ENTR390-DP1-Proto?page-id=0%3A1&node-id=19%3A1020&starting-point-node-id=19%3A1020">View project here</a>
+
+            </p>
+          </div>
+
+        </div>
+
+
       </div>
 
-
-
-    </div>
-
-    <div class="padding"></div>
+    </section>
 
   </main>
 
@@ -194,7 +189,6 @@
       <a href="https://www.twitter.com/RErasala/" target="_blank">
         <img class = "sm-icon" src="images/twitter.svg" alt="twitter">
       </a>
-
 
       <a href="https://www.linkedin.com/in/rohan-erasala-807bb5169/" target="_blank">
         <img class = "sm-icon" src="images/linkedin.svg" alt="LinkedIn">

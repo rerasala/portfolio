@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="images/logo_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <title>Rohan Erasala's Website</title>
+  </head>
+
+
+<header>
+
+  <script>
+
+      window.addEventListener("resize", function() {
+
+        console.log(window.innerWidth);
+
+        if(window.innerWidth >= 800){
+        document.getElementById("navElements").style.display = "flex";
+      } else {
+        document.getElementById("navElements").style.display = "none";
+      }
+
+      });
+
+    window.addEventListener("load", function() {
+      if(window.innerWidth >= 800){
+        document.getElementById("navElements").style.display = "flex";
+      } else {
+        document.getElementById("navElements").style.display = "none";
+      }
+    }); 
+
+    function displayMenu() {
+      if (document.getElementById("navElements").style.display === "flex") {
+        document.getElementById("navElements").style.display = "none";
+      } else {
+        document.getElementById("navElements").style.display = "flex";
+      }
+
+      if(document.getElementById("button-icon").src === "images/ci_hambuger.png") {
+        document.getElementById("button-icon").src = "images/x_icon.png";
+      }
+    }
+
+    function hideMenu() {
+      
+      document.getElementById("navElements").style.display = "none";
+      
+    }
+
+
+  </script>
+
+  <nav>
+    <a id = "logo" href = "index.html"> RE</a>
+    <div id="navElements">
+      <a class = "navLink current" href = "index.html" onclick = hideMenu()>Home</a>
+      <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
+      <a class = "navLink" href="projects.html" onclick="hideMenu()">Projects</a>
+      <a class = "navLink" href="gallery.html" onclick="hideMenu()">Gallery</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+      <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
+    </a>
+  </nav>
+
+</header>
+
+<body>
+  
+    <main id = "project-page">
+
+        <h1>Lifting Buddy</h1>
+        <h2>My first design project</h2>
+
+        <div class="project-grid">
+
+        </div>
+
+        <div class="gradient-1">
+            <h2>Problem</h2>
+            <p>When I was starting to get into lifting and exercises, I found that most of the existing applications were focused more about running and losing weight than lifting and gaining weight. I have a few friends who have also started to take the lifting journey with me, and they mentioned the same concerns. We knew what workouts we wanted to do and how long we needed to lift for - what we needed was an application that could function as a sort of journal that we could use to log our lifts and track our progress. Progressively overloading the amount of weight that you are lifting is extremely important when you are a beginner weightlifter, and we wanted an app that would make this process as easy as possible.</p>
+        </div>
+
+        <div class="gradient-2">
+            <h2>Problem</h2>
+            <p>When I was starting to get into lifting and exercises, I found that most of the existing applications were focused more about running and losing weight than lifting and gaining weight. I have a few friends who have also started to take the lifting journey with me, and they mentioned the same concerns. We knew what workouts we wanted to do and how long we needed to lift for - what we needed was an application that could function as a sort of journal that we could use to log our lifts and track our progress. Progressively overloading the amount of weight that you are lifting is extremely important when you are a beginner weightlifter, and we wanted an app that would make this process as easy as possible.</p>
+        </div>
+        
+    </main>
+
+    <footer>
+        <p class = "footer-logo">RE</p> 
+        <div class = "sm-links">
+        <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
+            <img class = "sm-icon" src="images/instagram.svg" alt="instagram">
+        </a>
+    
+        <a href="https://www.twitter.com/RErasala/" target="_blank">
+            <img class = "sm-icon" src="images/twitter.svg" alt="twitter">
+        </a>
+
+
+        <a href="https://www.twitter.com/RErasala/" target="_blank">
+            <img class = "sm-icon" src="images/linkedin.svg" alt="LinkedIn">
+        </a>
+
+        </div>
+    </footer>
+  
+</body>
+
+</html>

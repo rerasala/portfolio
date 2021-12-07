@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="images/png" href="images/logo_icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Nobile&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Rohan Erasala's Website</title>
+  </head>
+
+
+<header>
+
+  <script>
+
+      window.addEventListener("resize", function() {
+        if(window.innerWidth >= 800){
+        document.getElementById("navElements").style.display = "flex"
+      } else {
+        document.getElementById("navElements").style.display = "none";
+      }
+      });
+
+    window.addEventListener("load", function() {
+      if(window.innerWidth >= 800){
+        document.getElementById("navElements").style.display = "flex"
+      } else {
+        document.getElementById("navElements").style.display = "none";
+      }
+    }); 
+
+    function displayMenu() {
+      if (document.getElementById("navElements").style.display === "flex") {
+        document.getElementById("navElements").style.display = "none";
+      } else {
+        document.getElementById("navElements").style.display = "flex";
+      }
+
+      if(document.getElementById("button-icon").src === "images/ci_hambuger.png") {
+        document.getElementById("button-icon").src = "images/x_icon.png";
+      }
+    }
+
+    function hideMenu() {
+      
+      document.getElementById("navElements").style.display = "none";
+      
+    }
+
+
+  </script>
+
+  <nav>
+    <a id = "logo" href = "index.html"> RE</a>
+    <div id="navElements">
+      <a class = "navLink" href = "index.html" onclick = hideMenu()>Home</a>
+      <a class = "navLink" href="about.html" onclick="hideMenu()" >About</a>
+      <a class = "navLink current" href="projects.html" onclick="hideMenu()">Projects</a>
+      <a class = "navLink" href="gallery.html" onclick="hideMenu()">Gallery</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="displayMenu()">
+      <img id = "button-icon" src="images/ci_hamburger.png" alt = "menu icon"></i>
+    </a>
+  </nav>
+
+</header>
+
+<body>
+  
+  <main id = "home-box">
+
+    <div class="img-box">
+        <img class = "project-img-422" src="images/google_maps_header.png" alt="Spotify App">
+    </div>
+
+    <div class="title">
+
+        
+        <div class="padding"></div>
+
+        <h1>Case Study - Google Maps</h1>
+
+        <div class="padding"></div>
+    </div>
+
+    
+    <section id = "white">
+
+        <div class="project-box-422">
+
+            <h4>Context:</h2>
+                <br>
+                <br>
+            <p>
+                This was a project I took on as a part of my class SI 422 - Needs Assessment and Usability Evaluation. Our task was to run a 
+                usability test and a user survey on Google Maps. We wanted to understand users's pain points and their feelings about
+                our product, as well as make recommendations about future design decisions that could be made from our research.
+                <br>
+                <br>
+                <strong>Duration: </strong> 4 weeks
+                <br>
+                <strong>Team: </strong> Rohan Erasala, Grace Garmo, Anne George, Manasi Sridhar
+                <br>
+                <strong>Position: </strong> Researcher
+
+            </p>
+
+
+        </div>
+
+        <div class="project-box-422">
+
+            <h4>Background:</h2>
+                <br>
+                <br>
+            <p>
+                Google Maps is one of the most popular navigation services on the planet. However, Google Maps does 
+                far more than just get you from point A to point B, it also suggests restaurants and activities to you, helps you find 
+                hotels and plane tickets, and saves locations for you as a personal address book. As daily users of google maps ourselves, we wanted
+                to see if there were any usabliity issues that could've been revealed by our own research. We planned on revealing the results 
+                of our research to the Google Maps developers, whether issues were uncovered or not.
+
+                <br>
+                <br>
+
+                In order to do so, we created two usabliity tests and survey. The usabliity tests tested both the Google Maps desktop 
+                website as well as the mobile application. We published our tests on <a>usertesting.com</a> for real people to take and
+                report back to us about. We asked them to complete a series of tasks, asked them for their general feelings about Google Maps,
+                and pushed them to use certain features they may not have before.
+
+                The survey was about user's experience with navigation apps in general - what made their preferred navigation application
+                special, reporting good and bad experiences with navigation applications, and what they thought could be added to them.
+
+            </p>
+
+
+
+        </div>
+
+        <div class="project-box-422">
+
+            <h4>Process and Methods:</h2>
+                <br>
+                <br>
+            <p>
+               <strong>Step 1: Creating Our Usability Test</strong> <br>
+               
+               <br>
+
+               We started by understanding what the goals of our research were. This was done by creating 3 different test objectives that
+               we could reference throughout our project.
+
+               <br>
+               <br>
+
+
+               <strong>Objective 1: </strong>How does the age of the user affect the time it takes for users to navigate to locations?<br>
+               <strong>Objective 2: </strong>How user friendly is it for a user to check for travel time at some point in the future?<br> 
+               <strong>Objective 2: </strong>How easily can a user find a place to stop on the way between 2 locations?<br>
+
+               <br>
+               <br>
+
+               We then identified our audience in order to make sure we were targetting the right groups of people in our research. The only
+               people we did not want to target in our research were people who had advanced web expertise, as we did not want people who are adept
+               at using applications such as Google Maps.
+
+               <br><br>
+
+               </p>
+
+               <div id = "view-results" class="button-container">
+                <a class = "view-content-btn" href="https://docs.google.com/spreadsheets/d/1YktmKMzcDIboeiPFi3EfzuDRSbyIqPrvLRnG4c8L7Q8/edit#gid=0" target="_blank">View Our 
+                    Full Usability Test Here (Desktop)
+                </a>
+                </div>
+
+                <div id = "view-results" class="button-container">
+                    <a class = "view-content-btn" href="https://docs.google.com/spreadsheets/d/17dQzG85NKT21NMTrqmk-_uVS1C6AjKLRpjKKXeuUjJQ/edit#gid=0" target="_blank">View Our 
+                        Full Usability Test Here (Mobile)
+                    </a>
+                    </div>
+
+                <br><br>
+
+                <p>
+
+                    <strong>Step 2: Creating Our Survey</strong>
+
+                    <br><br>
+
+                    We started our survey by first determining what it was that we wanted to achieve by conducting this survey. We decided our final objective would
+                    be to learn what users want from a navigation product like Google Maps, and if that product currently meets their needs. In order to do this, we planned our 
+                    survey around determining desires of an ideal navigation application so we can analyze if Google Maps maintains these wants. You can view our full survey and our
+                    rationale behind our questions below.
+                    
+                    <br><br>
+
+                    We thought the most important aspects of organizing our survey were the order in which we asked the questions and the flow of survey topics. We wanted to make sure that the order of questions was focused on keeping the first few questions easy to understand and answer, and then get progressively more inquiring as the user went along. This is so that the user builds up momentum and completes our survey. Similarly, we ordered the flow of topics such that we started out with broad topics and worked our way to more niche and specific experiences. It was important to get “demographic” information earlier in the survey and then move toward more specific questions. This is because demographic questions are ones that the user does not need to necessarily think about very much, and are easier to answer. As described above, we wanted to keep these questions first. There were 2 questions that required branching, follow ups to our previous question. We made sure to provide a N/A option for these questions just in case it did not apply. We ensured the survey would make sense to our respondents by making sure to use clear, explicit language, and make it clear to our users that there is no right or wrong answer to any of the questions.
+
+                    <br><br>
+
+                    In order to effectively market our survey, we utilized social media and word of mouth, making sure to send our survey to as many diffrent people as we could so that we could get effective data.
+                </p>
+
+            <div id = "view-results" class="button-container">
+                <a class = "view-content-btn" href="https://docs.google.com/spreadsheets/d/1CdUD8xu8-JtXiUwxPORkfIWRW020V7J2oNFMtaAEuag/edit?usp=sharing" target="_blank">View Our Survey and Rationale Here
+                </a>
+            </div>
+            
+
+        </div>
+
+        <div class="project-box-422">
+
+            <h4>Outcomes:</h2>
+                <br>
+                <br>
+            <p>
+
+                <strong>Part 1: Analyzing Our Usability Test</strong>
+
+                    <br><br>
+     
+                    We ran 3 tests each, giving us a total of 12 participants that took our test. Of this 12, 3 took the iOS version of this test,
+                    3 took the Android version, and 6 took the full desktop version.
+     
+                    <br><br>
+
+                    The main findings we had from our testing were that google maps is primarily used for navigating a person from point A to point B. We found that users rarely use google maps for anything other than quick navigation to a location that is determined beforehand, or one that they can find later (i.e Indian restaurants, gas stations). <br><br> Repeatedly during our testing, we could hear people say phrases such as “I’ve never done this before” or “Why would you need to do this?”. This shows us that these features of google maps that are perhaps less obvious and more hidden than others are not popular features among users. <br><br> Another finding that we had was that users do not use google maps to plan trips into the future. This is evidenced by long times from users to complete tasks such as “finding ETAs for trips in the future” and “adding multiple stops to a route”. These tests averaged out to over 103 seconds, which is an extremely long time to complete a function that only takes about 4-5 clicks. It also had the lowest median and mean ease of completion. This was seen to take a long time because users did not know how to navigate the application effectively and had to go back and forth through screens repeatedly. Another part of our testing was determining whether users used powerful features of google maps such as setting a location as a parking location. <br><br> Not a single user out of the 12 that were tested were able to determine the process to set a location as a parking location. 2 users did mention that they were confused by the question itself, which may have contributed to the 100% rate of failure. In order to address this lack of access to power features in google maps, we recommend google maps implements a feature to “search functions” that allows users to understand the path that it would take to access features in google maps. As one user stated, “a lot of the features in this application are hidden behind ellipses, so I know I need to go there to find more”. If there was a search function in google maps for its features, it would be easier to locate how to accomplish these functions.
+
+                    <br><br>
+
+                <strong>Part 2: Analyzing our Survey Data</strong>
+
+                <p>
+
+                    <br>
+                    <br>
+
+                    In order to analyze our survey data, we used the integrated graphs features of google docs to generate graphs that helped us visualize a lot of our data. Below is some of the suprising data that we found.
+
+                    <br>
+                    <br>
+
+                    <div class="img-container">
+                        <img style = "width: 600px" src="images/survey_data_1.png" alt="survey data: dream application features">
+                    </div>
+
+                    <br>
+                    <br>
+
+                    This was surprising because a considerable amount of people desired more intuitive suggestions which points us to AI -based recommendation algorithms rather than wanting to search themselves
+
+                    <br>
+                    <br>
+
+                    <div class="img-container">
+                        <img style = "width: 600px" src="images/survey_data_2.png" alt="survey data: dream application features">
+                    </div>
+
+                    I was surprised that the most popular response (n/a nonwithstanding) for this question is that there have been unclear driving directions from navigation applications. Because these applications are so mainstream in technology, I wouldn't expect the primary problem with them to be, essentially, their intended purpose.
+
+
+                </p> 
+                    
+
+            </p>
+
+            <br>
+            <br>
+
+
+            <div id = "view-results" class="button-container">
+                <a class = "view-content-btn" href="https://docs.google.com/spreadsheets/d/1FYbhBk7BoB1sgwdHHFksGc9JFiD8syRok8wBRgHIs88/edit#gid=388893540" target="_blank">View Our Full Survey Analysis Here
+                </a>
+            </div>
+
+            <p>
+
+                <br>
+                <br>
+
+                <strong>
+                    Next Steps: Usability Testing
+                </strong>
+
+                <br>
+                <br>
+
+
+                Another round of usability testing will likely be necessary. We want to be able to run our test with different test questions and potentially different research methods. Based on the feedback that we were receiving from our users as they were completing our test, it seemed like there was a lot of confusion surrounding the instructions and how they were written. It is possible that our, at times, nonconsecutive question order began to frustrate users who could not see where the tasks were leading them. Now that we have a good understanding of how users approach these tests, I think that we could run another usability test that could give us better data due to less confusion.
+
+                <br>
+                <br>
+
+                <strong>
+                    Next Steps: Survey
+                </strong>
+
+
+                <br>
+                <br>
+                
+
+                When users were asked what was missing/not up to par about their navigation app, the most pressing issue seemed to be unclear navigation directions and inaccurate suggestions. Similarly, the most coveted feature of the navigation apps was the ability to have more intuitive suggestions and a more intuitive user interface. In order to meet these needs, navigation apps should look into more ways to enhance the user experience by collecting more location data from users. Looking at this issue from a design perspective, companies could look into creating a streamlined experience powered by user data to emphasize features that are really important to the user. 
+
+                <br>
+                <br>
+
+
+            </p>
+
+        </div>
+      
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p class = "footer-logo">RE</p> 
+    <div class = "sm-links">
+      <a href="https://www.instagram.com/rohan_erasala/" target="_blank">
+        <img class = "sm-icon" src="images/instagram.svg" alt="instagram">
+      </a>
+  
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="images/twitter.svg" alt="twitter">
+      </a>
+
+
+      <a href="https://www.twitter.com/RErasala/" target="_blank">
+        <img class = "sm-icon" src="images/linkedin.svg" alt="LinkedIn">
+      </a>
+
+    </div>
+  </footer>
+  
+</body>
+
+</html>
