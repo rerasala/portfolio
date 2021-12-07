@@ -10,7 +10,6 @@ window.addEventListener("load", function() {
   if(window.innerWidth >= 800){
     document.getElementById("navElements").style.display = "flex";
     document.getElementById("button-icon").setAttribute("tabindex", -1);
-    console.log(document.getElementById("button-icon").attributes)
   } else {
     document.getElementById("navElements").style.display = "none";
   }
